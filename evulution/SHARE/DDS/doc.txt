@@ -1,0 +1,184 @@
+
+Arduino nano
+Si5351
+Encoder Rotativo
+Push button x2
+Oled (4 pin)
+
+L'alimentazione puo' avvenire in due modi: mediante Vin oppure direttamente mediante +5V.
+
+Il canale CH0 e CH1 del Si5351 possono essere attenuati, se non è necessaria nessuna 
+attenuazione esguire il bypass, inoltre per CH0 è possibile utilizzare un filtro passa basso
+opzionale.
+
+Componenti filtro passa basso: C1-C2-C3-C4,L1,L2,L3 vanno selezionati in funzione della frequenza utilizzata.
+
+E' possibile montare Encoder, push buttons e oled direttamente sul pcb, oppure montarli separatamente.
+
+Per il montaggio separato collegare lato rame con un cavo : Ext 1->1  2->2 3->3 4->4 5->5 6->6 7->7 cosi facendo
+le connessioni del encoder e dei bottoni sono disponibili all'esterno.
+
+Per avere oled esterno al pcb collegare i relativi fili direttamente agli ingressi (oled su pcb)
+
+Al momento della trasmissione nel connettore VTX ci sono 12V (ad esempio) dall'esterno che fanno si che sul pin D13
+siano presenti alla fine +5V.
+
+D12 puo' essere utilizzato per produrre un segnale come Tono di accordo, controllato dal input in ingresso
+sul pin D11 attivato mediante uno switch.
+
+Gli ingressi D7,D8,D9,D10 possono essere usati da arduino, previo inserimento di una resistenza di pull down
+da inserire tra il pin e massa.
+
+Sono disponibili all'esterno i pin analogici: A1,A2,A3
+
+
+
+
+
+Arduino Nano Project Components and Features
+
+Components List
+
+    Arduino Nano
+
+    Si5351 (Clock Generator)
+
+    Rotary Encoder
+
+    Push Button x2
+
+    OLED (4 pin)
+
+Power Supply Options
+
+The device can be powered in two ways:
+
+    Via the Vin pin.
+
+    Directly via the +5V pin.
+
+Si5351 Clock Outputs
+
+The CH0 and CH1 channels of the Si5351 can be attenuated. If no attenuation is required, a bypass must be performed. Additionally, an optional low-pass filter can be used for CH0.
+
+Low-Pass Filter Components
+
+The components for the low-pass filter (C1, C2, C3, C4, L1, L2, L3) must be selected based on the frequency being used.
+
+Mounting Options (Encoder, Buttons, OLED)
+
+It's possible to mount the Encoder, push buttons, and OLED directly onto the PCB, or to mount them separately.
+
+Separate Mounting
+
+For separate mounting, connect the copper side (solder pads) with a cable as follows:
+
+    Ext 1 → 1
+
+    Ext 2 → 2
+
+    Ext 3 → 3
+
+    Ext 4 → 4
+
+    Ext 5 → 5
+
+    Ext 6 → 6
+
+    Ext 7 → 7
+
+This makes the connections for the encoder and buttons available externally.
+
+External Encoder
+
+If the encoder is external to the PCB, connect its wires directly to the respective inputs (assuming the OLED is on the PCB).
+
+Digital I/O Functionality
+
+D13 - Transmission Indicator
+
+During transmission, 12V (for example) is supplied externally to the VTX connector. This results in +5V being present on pin D13.
+
+D12 and D11 - Tune Signal
+
+Pin D12 can be used to produce a signal, such as a Tune Tone, which is controlled by an input signal on pin D11 that is activated by a switch.
+
+D7, D8, D9, D10 - General Purpose Input
+
+The inputs D7, D8, D9, and D10 can be used by the Arduino, provided that a pull-down resistor is inserted between the pin and ground.
+
+Analog Pins
+
+The following analog pins are available externally: A1, A2, A3.
+
+Arduino Nano Project Specifications
+
+1. Main Components List
+
+    Arduino Nano
+
+    Si5351 (Clock Generator)
+
+    Rotary Encoder
+
+    Push Button (x2)
+
+    OLED Display (4 pin)
+
+2. Power Supply
+
+Power can be supplied in two ways:
+
+    Via the Vin pin.
+
+    Directly to the +5V pin.
+
+3. Si5351 Output Management
+
+The CH0 and CH1 channels of the Si5351 can be attenuated.
+
+    If attenuation is not needed, a bypass must be performed.
+
+    An optional low-pass filter is available for the CH0 channel.
+
+Low-Pass Filter Components
+
+The components (C1, C2, C3, C4, L1, L2, L3) must be selected based on the frequency being used.
+
+4. Mounting Options
+
+The Encoder, push buttons, and OLED can be mounted directly on the PCB or separately.
+
+Separate Mounting (Encoder and Buttons)
+
+For separate mounting of the encoder and buttons, connect the copper side (pads) with a cable, following the pin-to-pin correspondence:
+Ext 1→1, 2→2, 3→3, 4→4, 5→5, 6→6, 7→7
+
+
+This makes the encoder and button connections available externally from the PCB.
+
+External OLED
+
+To have the OLED external to the PCB, connect its wires directly to the circuit inputs (it is assumed that connection pads for the OLED are available on the PCB).
+
+5. Digital Pin Functionality (Arduino)
+
+D13 - Transmission Indicator
+
+During the transmission phase, the presence of 12V (for example) supplied externally to the VTX connector causes +5V to appear on pin D13.
+
+D12 and D11 - Tune Signal
+
+    Pin D12 can be used to generate a signal, such as a Tune Tone.
+
+    This signal is controlled by an input signal on pin D11, which is activated via a switch.
+
+D7, D8, D9, D10 - General Purpose Inputs
+
+Pins D7, D8, D9, D10 can be used by the Arduino as inputs, provided that a pull-down resistor is inserted between the pin and ground (GND).
+
+6. External Analog Pins
+
+The following analog pins are available for external connection: A1, A2, A3.
+
+

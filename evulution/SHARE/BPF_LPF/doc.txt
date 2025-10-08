@@ -1,0 +1,23 @@
+verificare l'allineamento e vedere la prova di montaggio di un bpf
+
+Il socket permette di pluggare le tipologie di filtro che si desidera, questo
+perche' è possibile eventualmente utilizzare il socket per bande diverse.
+
+Rilacio anche un semplice tester per poter testare ad esempio con un VNA i filtri.
+
+Affiancando due socket è possibile realizzare una batteria di filtri BPF e LPF
+Per ogni lato del socket ho riportato le 4 posizione per la selezione della riga
+dei rele e quidi la banda selezionata.
+
+Per i filtri BPF e LPF mi sono ispirato ai kit di montaggio prodotti da qrplabs.
+qrplabs.com
+
+Le mie realizzazioni, sono artigianali rispetto a quelle ufficiali di qrplabs.
+quindi se volete la qualità eccelsa fate riferimento al sito qrplabs.com
+
+Per la costruzione di LPF e BPF potete fare riferimento ai rispettivi manuali
+
+https://qrp-labs.com/images/lpfkit/assembly_LT.pdf
+https://qrp-labs.com/images/bpfkit/bpf3.pdf
+
+I rele sono come quelli nella immagine.
