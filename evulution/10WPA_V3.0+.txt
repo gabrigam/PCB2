@@ -1,0 +1,6 @@
+* Partlist from file: "10WPA_V3.0+.lay6" [QPA] / 26/07/2025 14:46:02
+*
+* All coordinates in mm
+*
+* No	Name	Value	Layer	Pos-X	Pos-Y	Rot	Package
+*
