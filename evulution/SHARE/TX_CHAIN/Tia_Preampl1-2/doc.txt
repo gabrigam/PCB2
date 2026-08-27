@@ -1,0 +1,11 @@
+Si tratta del amplificatore: Termination Insensitive Amplifier
+
+Informazioni qui: https://w7zoi.net/bidirectional_matched_amplifier.pdf
+
+Per quanto riguarda l'impostazione del guadagno, nella mia realizzazione ho utilizzato questi valori:
+
+Tia_Preampl1  rf=680 rd=15 about gain=15.7 db
+
+Tia_Preampl2  rf=1800 rd=4.7  about gain=24,3 db
+
+

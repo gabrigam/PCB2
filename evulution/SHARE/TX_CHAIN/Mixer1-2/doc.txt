@@ -1,0 +1,5 @@
+Nel Mixer1 nella porta IF abbiamo l'uscita di AUS, nella porta LO il segnale BFO generato da arduino (CH0, verificare)
+la porta RF va collegata all'ingresso del primo amplificatore (Tia_Prempl1)
+
+Mixer 2 : l'uscita del secondo amplificatore (Tia_Prempl2) va collegata alla porta IF, nella porta LO collegar il segnale VFO
+da arduno (CH1); la porta RF va collegata al driver (DRIVER)

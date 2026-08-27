@@ -1,0 +1,48 @@
+
+
+L'amplificazione del segnale vocale si realizza tramite un piccolo PCB che utilizza l'integrato SSM2167. Questo modulo è facilmente reperibile online, ha un costo molto contenuto e offre buone prestazioni.
+
+Attenzione: Molto spesso, sui PCB di terze parti, le resistenze SMD R1 e R2 sono invertite funzionalmente o presentano valori errati. Devono essere modificati.
+
+    R1 (Noise Gate Threshold): Deve essere impostato a 1kΩ (RGATE​).
+
+    R2 (Compression Ratio): Deve essere impostato a 15kΩ (RCOMP​ per un rapporto di compressione di 2:1).
+
+Dovrai rimuovere le resistenze SMD esistenti e saldare i valori corretti (1kΩ e 15kΩ) negli appositi spazi per le resistenze a foro passante. 
+Se hai dubbi sulla corretta identificazione di R1 e R2 sul tuo PCB specifico, cerca informazioni aggiuntive in rete o verifica il pinout del chip.
+
+Il piccolo PCB SSM2167 va collocato nello spazio contrassegnato dal rettangolo, possibilmente leggermente sollevato.
+
+Collegamenti Elettrici
+
+    Esegui i collegamenti tra il PCB principale e il modulo SSM2167 utilizzando le tracce evidenziate in rosso.
+
+    Opzionale: Inserisci un condensatore elettrolitico da 10μF tra il pin VCC​ e la massa del PCB SSM2167 per una migliore stabilizzazione dell'alimentazione.
+
+Percorso del Segnale di Uscita
+
+L'uscita del modulo SSM2167 (segnale vocale compresso) si collega:
+
+    A un potenziometro esterno, usato per la regolazione fine del guadagno microfonico (Mic Gain).
+
+    Successivamente, entra nel pin NC (Normalmente Chiuso) del relè di commutazione.
+
+Implementazione Tono 1 kHz (Funzione Opzionale)
+
+Se desideri aggiungere una funzione di tono di calibrazione:
+
+    Un segnale di tono 1 kHz è generato, ad esempio, da un Arduino.
+
+    Il segnale passa attraverso un potenziometro per regolarne l'impedenza e l'ampiezza.
+
+    Il tono regolato si collega al pin NA (Normalmente Aperto) del relè.
+
+    Il relè si attiva quando una tensione idonea al relè stesso viene applicata al pin +Vtone​ (tipicamente tramite uno switch).
+
+L'uso di questa funzione (tono) non è obbligatorio.
+
+Schema Alternativo
+
+    Attenzione: Se decidi di non usare l'SSM2167 ma un amplificatore microfonico alternativo, l'uscita di tale amplificatore deve essere collegata direttamente
+    al punto contrassegnato con un asterisco (*) sul PCB principale.
+
